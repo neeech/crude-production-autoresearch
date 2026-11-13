@@ -1,0 +1,8 @@
+{
+  "raw_path": "data/raw/production_unconventional.csv",
+  "output_dir": "data/processed_oil",
+  "train_start": "2015-01-01",
+  "validation_start": "2023-01-01",
+  "test_start": "2025-01-01",
+  "max_history_months": 13
+}

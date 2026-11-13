@@ -1,0 +1,12 @@
+.venv/
+.venv-win/
+.tools/
+experiments/autoresearch/
+__pycache__/
+.pytest_cache/
+*.pyc
+data/processed/
+data/processed_oil/
+data/raw/production_unconventional.csv
+data/raw/production_unconventional.part
+experiments/training/

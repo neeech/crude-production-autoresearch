@@ -1,0 +1,7 @@
+{
+  "data_dir": "data/processed_oil",
+  "output_root": "experiments/training",
+  "seed": 42,
+  "ridge_alpha": 100.0,
+  "min_category_frequency": 20
+}

@@ -1,0 +1,32 @@
+[project]
+name = "crude-production-autoresearch"
+version = "0.1.0"
+description = "Autoresearch loop for monthly unconventional oil production forecasting"
+readme = "README.md"
+authors = [
+    { name = "manu-horn", email = "manuhorn1910@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "scikit-learn>=1.9.1",
+    "pandas>=2.2",
+    "pyarrow>=18",
+    "xgboost>=3.4.1",
+    "lightgbm>=4.7.0",
+    "catboost>=1.2.10",
+]
+
+[project.scripts]
+autoresearch = "crude_production_autoresearch.research:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
